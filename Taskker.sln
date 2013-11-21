@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Taskker", "Taskker\Taskker.vbproj", "{8DF89600-F568-4E17-B6A2-C24133B84901}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TaskkerLiveWeb", "H:\websites\TaskkerLiveWeb\Taskker\TaskkerLiveWeb\TaskkerLiveWeb.vbproj", "{D42D6E86-AB71-4C43-A9A0-75A70C0780D9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TaskkerReloaded", "H:\websites\TaskkerLiveWeb\Taskker\TaskkerReloaded\TaskkerReloaded.vbproj", "{E3703A8D-7352-479D-B20A-76176092D6CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DF89600-F568-4E17-B6A2-C24133B84901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF89600-F568-4E17-B6A2-C24133B84901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF89600-F568-4E17-B6A2-C24133B84901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF89600-F568-4E17-B6A2-C24133B84901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D42D6E86-AB71-4C43-A9A0-75A70C0780D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D42D6E86-AB71-4C43-A9A0-75A70C0780D9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D42D6E86-AB71-4C43-A9A0-75A70C0780D9}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E3703A8D-7352-479D-B20A-76176092D6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3703A8D-7352-479D-B20A-76176092D6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3703A8D-7352-479D-B20A-76176092D6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3703A8D-7352-479D-B20A-76176092D6CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

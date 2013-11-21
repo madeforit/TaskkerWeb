@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{8DF89600-F568-4E17-B6A2-C24133B84901}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Taskker</RootNamespace>
+    <AssemblyName>Taskker</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Taskker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Taskker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\websites\i4msWeb\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\colorbox.css" />
+    <Content Include="css\kube.css" />
+    <Content Include="css\kube.min.css" />
+    <Content Include="css\master.css" />
+    <Content Include="css\StyleSheet.css" />
+    <Content Include="default.aspx" />
+    <Content Include="favicons.ico" />
+    <Content Include="favicons.png" />
+    <Content Include="img\a.png" />
+    <Content Include="img\banners\01.png" />
+    <Content Include="img\banners\02.png" />
+    <Content Include="img\banners\03.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\main.jpg" />
+    <Content Include="img\min.png" />
+    <Content Include="img\taskker_avatar\0267b94e-7d35-4595-944b-0a8bf3322662.jpg" />
+    <Content Include="img\taskker_avatar\0443bffc-b757-47c6-ad75-73ef817fe4fe.JPG" />
+    <Content Include="img\taskker_avatar\06ef2c3c-74f4-4a45-8317-3681a4572e38.jpg" />
+    <Content Include="img\taskker_avatar\0df4cdf5-8d7d-4f1a-ad14-8168fcf564f6.jpg" />
+    <Content Include="img\taskker_avatar\110e6604-af3d-4375-b218-b1ddff366961.jpg" />
+    <Content Include="img\taskker_avatar\14ab16f1-b1a1-4c1a-9f33-e1b178d4a6c3.jpg" />
+    <Content Include="img\taskker_avatar\1524fc82-2687-4191-a13f-1529d07c694c.jpg" />
+    <Content Include="img\taskker_avatar\18f7d5a9-fb06-4f2e-b2c6-13a111326127.JPG" />
+    <Content Include="img\taskker_avatar\1c80afee-52f5-410d-9721-2684144d7ee0.jpg" />
+    <Content Include="img\taskker_avatar\1cafd77d-1b53-4a03-992a-4929d9430a9d.JPG" />
+    <Content Include="img\taskker_avatar\1f0f4177-9c31-4704-b0f7-6a3e48bfbf9f.jpg" />
+    <Content Include="img\taskker_avatar\23783493-719d-44b6-b147-fe2e3fd3cfe2.jpg" />
+    <Content Include="img\taskker_avatar\2a6512cd-ed6a-48f1-98d5-0ef1642b25fc.jpg" />
+    <Content Include="img\taskker_avatar\2fe90e82-7632-4d5e-b864-a247a2f8b005.jpg" />
+    <Content Include="img\taskker_avatar\397fa3dc-b9e4-4bdd-98d8-d2d6aba197a5.jpg" />
+    <Content Include="img\taskker_avatar\3e94b3d4-2824-4807-9002-eab569f10e04.jpg" />
+    <Content Include="img\taskker_avatar\536538a3-5f19-4a31-9c52-2c1531254105.jpg" />
+    <Content Include="img\taskker_avatar\54721fa7-06b3-4bc3-a435-a7869a597edb.jpg" />
+    <Content Include="img\taskker_avatar\5923fc96-d83a-4256-ba0d-ee33d212d91f.jpg" />
+    <Content Include="img\taskker_avatar\6f3d13ba-3bec-4247-bde3-593719f3708d.JPG" />
+    <Content Include="img\taskker_avatar\815cc36b-fd9a-4aeb-9fbd-d0b52da060fa.jpg" />
+    <Content Include="img\taskker_avatar\86ba8faf-9aaa-4a7b-bfd3-dbda8ee29c2b.jpg" />
+    <Content Include="img\taskker_avatar\86c2f588-5cde-451c-9495-401cc45e8578.jpg" />
+    <Content Include="img\taskker_avatar\93400d17-fba7-410d-9aff-e9e2799aa74c.jpg" />
+    <Content Include="img\taskker_avatar\943abf89-db32-4103-aacc-d1fd04b50a92.JPG" />
+    <Content Include="img\taskker_avatar\96a951c8-da99-42ee-82bc-d1cb14639e56.jpg" />
+    <Content Include="img\taskker_avatar\a05468af-9193-474c-8389-4b8118eb6dc1.jpg" />
+    <Content Include="img\taskker_avatar\a197e0a0-fdd3-42dc-8033-b259d9cad51f.jpg" />
+    <Content Include="img\taskker_avatar\a2771858-1a7b-4c69-9d06-276335b5e4ac.jpg" />
+    <Content Include="img\taskker_avatar\a66db588-13c8-47b1-96b8-0e6caeee5e66.jpg" />
+    <Content Include="img\taskker_avatar\aeeb5fec-cb18-4f4d-b2a9-04bcfa6db561.jpg" />
+    <Content Include="img\taskker_avatar\b0eeb59f-c829-46f8-b724-68e762495124.jpg" />
+    <Content Include="img\taskker_avatar\b62f9361-1e71-42bf-8877-f43ce08864aa.jpg" />
+    <Content Include="img\taskker_avatar\b6e3582c-f19f-4f32-9219-3342ac044a09.jpg" />
+    <Content Include="img\taskker_avatar\bb3a0ca1-cd31-442d-83fc-89b0328f285a.jpg" />
+    <Content Include="img\taskker_avatar\c5522876-118f-4fb9-a763-e6e286794e2f.jpg" />
+    <Content Include="img\taskker_avatar\c691c041-4dcd-4a7b-bfd9-b9793998e4ab.jpg" />
+    <Content Include="img\taskker_avatar\cea62b35-4573-4c15-a839-e7a87c447233.JPG" />
+    <Content Include="img\taskker_avatar\d0e0c772-79b9-4279-8618-8942285c944a.jpg" />
+    <Content Include="img\taskker_avatar\d2d151ca-3a1e-40c8-9569-7d4a9ff399cf.JPG" />
+    <Content Include="img\taskker_avatar\d81081a1-f864-4ea2-b133-01542f32c7d0.jpg" />
+    <Content Include="img\taskker_avatar\de8b6fa3-94df-41c3-b52b-6bfbc2847400.jpg" />
+    <Content Include="img\taskker_avatar\e1c8085b-22e0-4754-a404-cf94e12f2542.jpg" />
+    <Content Include="img\taskker_avatar\e74fd5e7-91b6-4945-ab0e-47ab199d3338.JPG" />
+    <Content Include="img\taskker_avatar\e830ec20-1d13-4a34-936a-8c06a8e4e200.jpg" />
+    <Content Include="img\taskker_avatar\ec5baa61-259e-4d6b-acc0-b81b53bec283.jpg" />
+    <Content Include="img\taskker_avatar\ed2ecaf4-3c87-430c-8fce-a50462947df6.jpg" />
+    <Content Include="img\taskker_avatar\ed43fc16-2955-49e2-bc44-30fbc89d93f7.JPG" />
+    <Content Include="img\taskker_avatar\effd3305-c253-4f71-b294-bf8fc59cae43.jpg" />
+    <Content Include="img\taskker_avatar\f2fc3f46-c19f-4592-a334-4cb2c6d21c6a.JPG" />
+    <Content Include="img\taskker_avatar\f2fda480-035f-46ed-bce0-23a8ba28fbbe.JPG" />
+    <Content Include="img\taskker_avatar\f3325221-b641-412e-a17d-d563e5000e9f.JPG" />
+    <Content Include="img\taskker_avatar\f846eaea-02a8-49c2-b74f-2f8167b35f0f.jpg" />
+    <Content Include="img\taskker_avatar\fca0fecd-98bc-4e65-85aa-04f89dd7b612.jpg" />
+    <Content Include="js\jquery-1.10.1.min.js" />
+    <Content Include="js\jquery.colorbox.js" />
+    <Content Include="js\jquery.event.swipe.js" />
+    <Content Include="js\jquery.flip.min.js" />
+    <Content Include="js\kube.buttons.js" />
+    <Content Include="js\kube.tabs.js" />
+    <Content Include="js\speech.js" />
+    <Content Include="js\tskker.js" />
+    <Content Include="js\unslider.min.js" />
+    <Content Include="t.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="_addNewTask.ascx" />
+    <Content Include="_footer.ascx" />
+    <Content Include="_header.ascx" />
+    <Content Include="_mainPage.ascx" />
+    <Content Include="_tskList.ascx" />
+    <Content Include="__login.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="t.aspx.designer.vb">
+      <DependentUpon>t.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="t.aspx.vb">
+      <DependentUpon>t.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="_addNewTask.ascx.designer.vb">
+      <DependentUpon>_addNewTask.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_addNewTask.ascx.vb">
+      <DependentUpon>_addNewTask.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_db.vb" />
+    <Compile Include="_footer.ascx.designer.vb">
+      <DependentUpon>_footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_footer.ascx.vb">
+      <DependentUpon>_footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_header.ascx.designer.vb">
+      <DependentUpon>_header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_header.ascx.vb">
+      <DependentUpon>_header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_mainPage.ascx.designer.vb">
+      <DependentUpon>_mainPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_mainPage.ascx.vb">
+      <DependentUpon>_mainPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_tskList.ascx.designer.vb">
+      <DependentUpon>_tskList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_tskList.ascx.vb">
+      <DependentUpon>_tskList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="__login.ascx.designer.vb">
+      <DependentUpon>__login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="__login.ascx.vb">
+      <DependentUpon>__login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62790/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
