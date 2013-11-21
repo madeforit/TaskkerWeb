@@ -114,35 +114,7 @@ Public Class __login
         End Try
     End Function
 
-    'Protected Sub btnSignIn_Click(sender As Object, e As EventArgs) Handles btnSignIn.Click
-    '    btnSignIn.Visible = False
-    '    pnlSignIn.Visible = True
-    '    '     pnlLeadHome.Visible = False
-    '    btnRegistration.Visible = False
-    '    txtUserName.Focus()
-    'End Sub
-
-    'Private Sub lnkACS_Click(sender As Object, e As EventArgs) Handles lnkACS.Click
-
-    '    Response.Redirect("https://i4msco.accesscontrol.windows.net:443/v2/wsfederation?wa=wsignin1.0&wtrealm=http%3a%2f%2fi4.ms%2f")
-
-    'End Sub
-
-    'Private Sub lnkLocalHost_Click(sender As Object, e As EventArgs) Handles lnkLocalHost.Click
-    '    '   Response.Redirect("https://i4msco.accesscontrol.windows.net:443/v2/wsfederation?wa=wsignin1.0&wtrealm=http%3a%2f%2flocalhost%3a15235%2f")
-    '    Response.Redirect("SignIn.html")
-    'End Sub
-
-    'Private Sub btnRegistration_Click(sender As Object, e As EventArgs) Handles btnRegistration.Click
-    '    pnlLogin.Visible = True
-    '    pnlSignIn.Visible = False
-    '    '    pnlLeadHome.Visible = False
-    '    '   pnlAdmin.Visible = False
-    '    pnlRegistration.Visible = True
-    '    txtPhoneNumber.Focus()
-    '    txtEmail.Focus()
-
-    'End Sub
+   
 
     Private Sub BtnRegisterPhone_Click(sender As Object, e As EventArgs) Handles BtnRegisterPhone.Click
         If txtPhoneNumber.Text <> "" Then
@@ -162,11 +134,7 @@ Public Class __login
                 '    Exit Sub
             End Try
             '  Exit Sub
-            '   pnlLeadHome.Visible = False
-            'pnlLogin.Visible = True
-            'pnlRegistration.Visible = False
-            ''   pnlAdmin.Visible = False
-            'pnlSignIn.Visible = True
+       
             txtUserName.Focus()
         End If
 
@@ -182,9 +150,8 @@ Public Class __login
                 Dim _Pass As String = dsUserReg.Tables(0).Rows(0).Item("UPass").ToString
                 Dim _Phone As String = dsUserReg.Tables(0).Rows(0).Item("Email").ToString
                 '  dbSrv.exeDB("prcUserNewRegistration", "Phone", txtPhoneNumber.Text)
-                dbSrv.SendMailNotification("User account tser ", "user:" & _User & " pass:" & _Pass & "<br>   Learn more at <a href='http://i4.ms'>http://i4.ms</a> <br>  <a href='http://i4.ms/privacy.aspx'>Privacy</a> " & vbNewLine & dbSrv._poweredBy, txtEmail.Text)
-                '     dbSrv.SendMailNotification("New User account i4.ms ", txtEmail.Text & vbNewLine & "user:" & _User & " pass:" & _Pass & "  http://i4.ms " & vbNewLine, dbSrv._adminMail)
-                '    lblDetailsReg.Text = "Please check your email for a message in short time and login!');"
+                dbSrv.SendMailNotification("User account tser ", "user:" & _User & " pass:" & _Pass & "<br>    " & vbNewLine & dbSrv._poweredBy, txtEmail.Text)
+
                 ScriptManager.RegisterClientScriptBlock(Me.Page, GetType(String), "message", "alert('We will send your login details soon! Note that currently we accept only corporate email domains... ');", True)
                 ' Response.Redirect(".")
             Catch ex As Exception
@@ -215,18 +182,6 @@ Public Class __login
         pnlSignIn.Visible = False
     End Sub
 
-    'Protected Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-    '       pnlLogin.Visible = True
-    '    pnlRegistration.Visible = False
-    '    pnlSignIn.Visible = False
-    'End Sub
 
-
-
-    'Protected Sub btnCancelRegistrationEmail_Click1(sender As Object, e As EventArgs) Handles btnCancelRegistrationEmail.Click
-    '       pnlLogin.Visible = True
-    '    pnlRegistration.Visible = False
-    '    pnlSignIn.Visible = False
-    'End Sub
 
 End Class
